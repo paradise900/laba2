@@ -13,3 +13,4 @@ s2 = sum(a[125:]) / 125
 
 print( green + ' ' * int(10 + s1 * 10) + end + ' -- first 125 nums' )
 print( red + ' ' * int(10 + s2 * 10) + end + ' -- second 125 nums')
+f.close()
