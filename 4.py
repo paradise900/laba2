@@ -3,14 +3,16 @@ white = '\u001b[47m'
 end = '\u001b[0m'
 red = '\u001b[41m'
 green = '\u001b[42;1m'
+length = 10
+part = 125
 
-f = open('itmo_study/laba2/sequence.txt')
-a = []
-for x in f:
-    a.append(float(x[:-1]))
-s1 = sum(a[:125]) / 125
-s2 = sum(a[125:]) / 125
+file = open('itmo_study/laba2/sequence.txt')
+numbers = []
+for number in file:
+    numbers.append(float(number[:-1]))
+first_125 = sum(numbers[:part]) / part
+second_125 = sum(numbers[part:]) / part
 
-print( green + ' ' * int(10 + s1 * 10) + end + ' -- first 125 nums' )
-print( red + ' ' * int(10 + s2 * 10) + end + ' -- second 125 nums')
-f.close()
+print(f"{green + ' ' * int(length + first_125 * length) + end} -- first 125 nums")
+print(f"{red + ' ' * int(length + second_125 * length) + end} -- second 125 nums")
+file.close()

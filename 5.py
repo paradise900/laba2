@@ -8,9 +8,9 @@ end = '\u001b[0m'
 red = '\u001b[41m'
 green = '\u001b[42;1m'
 
-for i in range(10):
+for num in range(10):
     os.system("clear")
-    if i % 2 == 0:
+    if num % 2 == 0:
         print(red + '  ' + black + '  ' + red + '  ' + end)
         print(black + '  ' + red + '  ' + black + '  ' + end)
         print(red + '  ' + black + '  ' + red + '  '+ end)
