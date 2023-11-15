@@ -1,9 +1,10 @@
-red = '\u001b[41m'
-white = '\u001b[47m'
-end = '\u001b[0m'
+RED = '\u001b[41m'
+WHITE = '\u001b[47m'
+END = '\u001b[0m'
+LENGHT = 20
+ITERATIONS = 3
 
-length = 20
-for _ in range(3):
-    print(white + ' ' * length + end)
-for _ in range(3):
-    print(red + ' ' * length + end)
+for _ in range(ITERATIONS):
+    print(f"{WHITE + ' ' * LENGHT + END}")
+for _ in range(ITERATIONS):
+    print(f"{RED + ' ' * LENGHT + END}")

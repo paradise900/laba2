@@ -2,20 +2,18 @@ import os
 from time import sleep
 
 
-black = "\u001b[40m"
-white = '\u001b[47m'
-end = '\u001b[0m'
-red = '\u001b[41m'
-green = '\u001b[42;1m'
-
-for num in range(10):
+BLACK = "\u001b[40m"
+END = '\u001b[0m'
+RED = '\u001b[41m'
+LENDTH = 10
+for num in range(LENDTH):
     os.system("clear")
     if num % 2 == 0:
-        print(red + '  ' + black + '  ' + red + '  ' + end)
-        print(black + '  ' + red + '  ' + black + '  ' + end)
-        print(red + '  ' + black + '  ' + red + '  '+ end)
+        print(f"{RED + '  ' + BLACK + '  ' + RED + '  ' + END}")
+        print(f"{BLACK + '  ' + RED + '  ' + BLACK + '  ' + END}")
+        print(f"{RED + '  ' + BLACK + '  ' + RED + '  '+ END}")
     else:
-        print(black + '  ' + red + '  ' + black + '  '+ end)
-        print(red + '  ' + black + '  ' + red + '  '+ end)
-        print(black + '  ' + red + '  ' + black + '  '+ end)
+        print(f"{BLACK + '  ' + RED + '  ' + BLACK + '  '+ END}")
+        print(f"{RED + '  ' + BLACK + '  ' + RED + '  '+ END}")
+        print(f"{BLACK + '  ' + RED + '  ' + BLACK + '  '+ END}")
     sleep(0.1)

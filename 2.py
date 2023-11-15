@@ -1,9 +1,10 @@
-black = "\u001b[40m"
-white = '\u001b[47m'
-end = '\u001b[0m'
-
-print( black + ' ' * 2 * 9 + end )
-print( white + ' ' * 2 * 4 + black + ' ' * 2 + white + ' ' * 8 + end )
-print( black + ' ' * 2 * 9 + end )
-print( white + ' ' * 2 + black + ' ' * 2 + white + ' ' * 10 + black + ' ' * 2 + white + ' ' * 2 + end )
-print( black + ' ' * 2 * 9 + end )
+BLACK = "\u001b[40m"
+WHITE = '\u001b[47m'
+END = '\u001b[0m'
+WIDTH = 2
+LENGTH = 9
+print(f"{BLACK + ' ' * WIDTH * LENGTH + END}" )
+print( f"{WHITE + ' ' * WIDTH * WIDTH**2 + BLACK + ' ' * WIDTH + WHITE + ' ' * WIDTH**3 + END}" )
+print( f"{BLACK + ' ' * WIDTH * LENGTH + END}" )
+print( f"{WHITE + ' ' * WIDTH + BLACK + ' ' * WIDTH + WHITE + ' ' * LENGTH + BLACK + ' ' * WIDTH + WHITE + ' ' * WIDTH + END}" )
+print( f"{BLACK + ' ' * WIDTH * LENGTH + END}" )
